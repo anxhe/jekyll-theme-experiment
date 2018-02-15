@@ -1,0 +1,16 @@
+.navbar {
+  text-align: right;
+  background-color: $grey-color-light;
+  .navbar-item {
+    padding: $spacing-unit / 2;
+    text-transform: uppercase;
+    & > a {
+      color: $brand-color;
+      font-weight: bold;
+      padding: 0 $spacing-unit / 2;
+    }
+    & > a:hover {
+      color: $grey-color-dark;
+    }
+  }
+}
