@@ -1,5 +1,5 @@
 .information-box {
-  width: $content-width + $content-width / 2;
   padding: $spacing-unit;
-  margin:  0 $spacing-unit;
+  flex-basis:  $content-width - $content-width / 4;
+  flex-grow: 1;
 }

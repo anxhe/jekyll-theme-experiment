@@ -1,4 +1,20 @@
 .l-wrap {
-  padding:  $spacing-unit * 2 0;
-  min-height: $content-width;
+  padding:  $spacing-unit * 2;
+  min-height: $content-width - $content-width / 2;
+}
+
+.l-around {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: $on-palm) {
+    flex-direction: column;
+  }
+}
+
+.l-content {
+  h3 {
+    @media screen and (max-width: $on-palm) {
+      font-size: 2em;
+    }
+  }
 }

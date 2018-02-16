@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -81,11 +79,13 @@ a {
 
 
 hr {
+  width: 300px;
   border-radius: 200px /8px;
   height: 0px;
   box-shadow: 0 0 1em $brand-color;
   margin-bottom: $spacing-unit;
 }
+
 
 /**
  * Blockquotes

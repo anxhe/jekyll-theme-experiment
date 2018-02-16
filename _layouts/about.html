@@ -2,10 +2,13 @@
 layout: default
 ---
 
-<div class="l-wrap">
-  <div class="information-box">
-    <h1 class="title" >About</h1>
+<div class="l-wrap l-around">
+  <div class="l-content information-box">
     <hr>
+    <h1 class="title" >About</h1>
     {{ content }}
+  </div>
+  <div class="avatar">
+    <img src="{{ site.avatar }}" alt="avatar">
   </div>
 </div>
