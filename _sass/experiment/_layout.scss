@@ -1,6 +1,9 @@
 .l-wrap {
-  padding:  $spacing-unit * 2;
+  padding: $spacing-unit + $spacing-unit * 2 $spacing-unit;
   min-height: $content-width - $content-width / 2;
+  &:nth-child(odd) {
+    background-color: $grey-color-light;
+  }
 }
 
 .l-around {
@@ -14,7 +17,19 @@
 .l-content {
   h3 {
     @media screen and (max-width: $on-palm) {
-      font-size: 2em;
+      font-size: 1.2em;
     }
   }
+}
+
+.l-center {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.l-item-portafolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
