@@ -1,6 +1,8 @@
 .navbar {
+  position: fixed;
   text-align: right;
   background-color: $grey-color-light;
+  width: 100%;
   .navbar-item {
     padding: $spacing-unit / 2;
     text-transform: uppercase;
