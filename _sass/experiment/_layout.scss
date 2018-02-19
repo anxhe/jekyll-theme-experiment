@@ -1,17 +1,18 @@
 .l-wrap {
-  padding: $spacing-unit + $spacing-unit * 2 $spacing-unit;
+  padding: $spacing-unit * 4;
   min-height: $content-width - $content-width / 2;
   &:nth-child(odd) {
     background-color: $grey-color-light;
   }
+  @media screen and (max-width: 800px ) {
+    padding: $spacing-unit * 2 0;
+  }
 }
 
 .l-around {
-  display: flex;
   align-items: center;
-  @media screen and (max-width: $on-palm + $spacing-unit * 3) {
-    flex-direction: column;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .l-content {

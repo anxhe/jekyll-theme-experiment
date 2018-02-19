@@ -1,0 +1,14 @@
+.content-tools {
+  box-shadow: 0 0 1em $grey-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $spacing-unit;
+  margin: $spacing-unit;
+  min-width: 200px;
+  img {
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+  }
+}
