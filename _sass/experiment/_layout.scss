@@ -9,7 +9,7 @@
 .l-around {
   display: flex;
   align-items: center;
-  @media screen and (max-width: $on-palm) {
+  @media screen and (max-width: $on-palm + $spacing-unit * 3) {
     flex-direction: column;
   }
 }

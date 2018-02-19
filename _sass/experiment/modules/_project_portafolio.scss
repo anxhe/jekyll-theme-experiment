@@ -2,12 +2,13 @@ $items: 4;
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
 
+
 .item-container-project {
   background-color: $background-color;
   margin: $spacing-unit;
   width: 400px;
   height: 285px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: $on-phone) {
     width: 300px;
     height: 180px;
   }
@@ -16,7 +17,7 @@ $transition-delay: 0.05s;
     background-size: cover;
     background-image: url('../assets/example.png');
     height: 215px;
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: $on-phone) {
       height: 115px;
     }
   }
@@ -28,7 +29,7 @@ $transition-delay: 0.05s;
     position: relative;
     top: -215px;
     overflow: hidden;
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: $on-phone) {
       height: 180px;
       top: -115px;
       width: 300px;
@@ -41,14 +42,14 @@ $transition-delay: 0.05s;
       display: block;
       bottom: 0px;
       position: absolute;
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: $on-phone) {
         height: 30px;
       }
       h3 {
         color: $brand-color;
         text-align: end;
         margin: 15px 15px 0 0;
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: $on-phone) {
           font-size: 17px;
           margin: 0 5px 0 0;
         }

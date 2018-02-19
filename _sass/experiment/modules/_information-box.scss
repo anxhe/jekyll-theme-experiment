@@ -2,4 +2,7 @@
   padding: $spacing-unit;
   flex-basis:  $content-width - $content-width / 4;
   flex-grow: 1;
+  @media screen and (max-width: $on-palm + $spacing-unit * 3) {
+    flex-basis: 0;
+  }
 }
