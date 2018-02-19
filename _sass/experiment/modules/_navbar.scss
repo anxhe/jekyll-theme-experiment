@@ -1,8 +1,10 @@
 .navbar {
+  box-shadow: 0 0 0.2em $grey-color;
   position: fixed;
   text-align: right;
   background-color: $grey-color-light;
   width: 100%;
+  z-index: 10;
   .navbar-item {
     padding: $spacing-unit / 2;
     text-transform: uppercase;

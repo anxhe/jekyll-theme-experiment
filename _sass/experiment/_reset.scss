@@ -84,6 +84,9 @@ hr {
   height: 0px;
   box-shadow: 0 0 1em $brand-color;
   margin-bottom: $spacing-unit;
+  @media screen and (max-width: 320px) {
+    width: 250px;
+  }
 }
 
 
