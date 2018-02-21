@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+<article class="l-wrap">
+  <div class="l-center-column head-post">
+    <hr class="hr-decorator">
+    <h1 class="title">{{ site.name }}</h1>
+  </div>
+  <div class="post">
+    {{ content }}
+  </div>
+</article>
+
+{% include social-media-links.html %}

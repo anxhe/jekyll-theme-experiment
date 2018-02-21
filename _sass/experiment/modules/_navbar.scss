@@ -2,19 +2,18 @@
   box-shadow: 0 0 0.2em $grey-color;
   position: fixed;
   text-align: right;
-  background-color: $grey-color-light;
+  background-color: $purple-color;
   width: 100%;
   z-index: 10;
   .navbar-item {
     padding: $spacing-unit / 2;
     text-transform: uppercase;
     & > a {
-      color: $brand-color;
       font-weight: bold;
       padding: 0 $spacing-unit / 2;
     }
     & > a:hover {
-      color: $grey-color-dark;
+      color: $grey-color-light;
     }
   }
 }

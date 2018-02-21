@@ -1,0 +1,17 @@
+
+.hr-decorator {
+  width: 300px;
+  border-radius: 200px /8px;
+  height: 0px;
+  box-shadow: 0 0 1em $brand-color;
+  margin: $spacing-unit 0;
+  @media screen and (max-width: 320px) {
+    width: 250px;
+  }
+}
+
+.hr-separator {
+  height: 0px;
+  box-shadow: 0 0 1em $brand-color;
+  width: 100%;
+}

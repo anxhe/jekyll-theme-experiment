@@ -57,15 +57,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+h1 {
+  color: $brand-color ;
+}
+
+h2 {
+  color: $purple-color;
+}
 /**
  * Links
  */
 a {
-  color: $grey-color;
+  color: $brand-color;
   text-decoration: none;
 
   &:hover {
-    color: $text-color;
+    color: $grey-color-dark;
   }
 
   .social-media-list &:hover {
@@ -78,58 +85,47 @@ a {
 }
 
 
-hr {
-  width: 300px;
-  border-radius: 200px /8px;
-  height: 0px;
-  box-shadow: 0 0 1em $brand-color;
-  margin-bottom: $spacing-unit;
-  @media screen and (max-width: 320px) {
-    width: 250px;
-  }
-}
 
 
 /**
  * Blockquotes
  */
-// blockquote {
-//   color: $grey-color;
-//   border-left: 4px solid $grey-color-light;
-//   padding-left: $spacing-unit / 2;
-//   @include relative-font-size(1.125);
-//   letter-spacing: -1px;
-//   font-style: italic;
-//
-//   > :last-child {
-//     margin-bottom: 0;
-//   }
-// }
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  // @include relative-font-size(1.125);
+  letter-spacing: -1px;
+  font-style: italic;
 
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
 
 
 /**
  * Code formatting
  */
-// pre,
-// code {
-//   @include relative-font-size(0.9375);
-//   border: 1px solid $grey-color-light;
-//   border-radius: 3px;
-//   background-color: #eef;
-// }
-//
-// code {
-//   padding: 1px 5px;
-// }
-//
-// pre {
-//   padding: 8px 12px;
-//   overflow-x: auto;
-//
-//   > code {
-//     border: 0;
-//     padding-right: 0;
-//     padding-left: 0;
-//   }
-// }
+pre,
+code {
+  // @include relative-font-size(0.9375);
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

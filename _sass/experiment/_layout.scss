@@ -1,10 +1,10 @@
 .l-wrap {
   padding: $spacing-unit * 4;
-  min-height: $content-width - $content-width / 2;
+  // min-height: $content-width - $content-width / 2;
   &:nth-child(odd) {
     background-color: $grey-color-light;
   }
-  @media screen and (max-width: 800px ) {
+  @media screen and (max-width: 1000px ) {
     padding: $spacing-unit * 2 0;
   }
 }
@@ -23,10 +23,16 @@
   }
 }
 
-.l-center {
+.l-center-column {
   align-items: center;
   display: flex;
   flex-flow: column;
+}
+
+.l-center-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .l-item {

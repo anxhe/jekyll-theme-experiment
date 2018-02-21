@@ -18,6 +18,8 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$purple-color: rgb(70,50,76);
+$purple-color-transparent: rgba(70,50,76,0.9);
 // $table-text-align: left !default;
 
 //Width of the content area
@@ -38,5 +40,7 @@ $on-laptop:        800px !default;
   "experiment/modules/navbar",
   "experiment/modules/avatar",
   "experiment/modules/project_portafolio",
-  "experiment/modules/content_tools"
+  "experiment/modules/content_tools",
+  "experiment/modules/post",
+  "experiment/modules/hr"
 ;

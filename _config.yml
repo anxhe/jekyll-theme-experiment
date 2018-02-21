@@ -1,13 +1,18 @@
 title: anxhe
 author: GitHub User
+
+name: Your Username
+description: Programmer From Somewhere On Earth
+
 avatar : https://robohash.org/experiment.png?size=300x300
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   This is a site where I talk a litle about me and mys proyects.
+
 # social links
 twitter_username: anxhe_
 github_username:  anxhe
-rss: rss
+# rss: rss
 #dribbble_username: jekyll
 #facebook_username: jekyll
 #flickr_username: jekyll
@@ -30,6 +35,7 @@ minima:
 header_pages:
   - about.md
   - project.md
+  - blog.md
   - page.md
   - post.md
 

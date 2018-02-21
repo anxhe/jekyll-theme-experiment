@@ -4,8 +4,8 @@ layout: default
 
 <div class="l-wrap l-around">
   <div class="l-content information-box">
-    <hr>
-    <h1 class="title">About</h1>
+    <hr class="hr-decorator">
+    <h1>{{ site.name }}</h1>
     {{ content }}
   </div>
   <div class="avatar">
@@ -14,16 +14,4 @@ layout: default
 </div>
 
 {% include project.html %}
-
-<div class="l-wrap">
-  <div class="l-center">
-    <hr>
-    <h1 class="title">Tools</h1>
-  </div>
-  <div class="content-tools">
-    <img src="../assets/icons/javascript/javascript-original.svg" alt="">
-    <img src="../assets/icons/javascript/javascript-original.svg" alt="">
-    <img src="../assets/icons/javascript/javascript-original.svg" alt="">
-
-  </div>
-</div>
+{% include footer.html %}
