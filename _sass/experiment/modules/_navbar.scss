@@ -15,5 +15,8 @@
     & > a:hover {
       color: $grey-color-light;
     }
+    & .active {
+      color: $grey-color-light;
+    }
   }
 }
