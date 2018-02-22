@@ -5,13 +5,20 @@ layout: default
 <div class="l-wrap l-around">
   <div class="l-content information-box">
     <hr class="hr-decorator">
-    <h1>{{ site.name }}</h1>
-    {{ content }}
+    {% if  site.theme_jekyll-theme-experiment.about.title %}
+      <h1>{{ site.theme_jekyll-theme-experiment.about.title }}</h1>
+    {% endif %}
+    {% if  site.theme_jekyll-theme-experiment.about.description %}
+      <h3>{{ site.theme_jekyll-theme-experiment.about.description }}</h3>
+    {% endif %}
   </div>
-  <div class="avatar">
-    <img src="{{ site.avatar }}" alt="avatar">
-  </div>
+  {% if site.theme_jekyll-theme-experiment.about.avatar %}
+    <div class="avatar">
+        <img src="{{ site.theme_jekyll-theme-experiment.about.avatar }}" alt="avatar">
+    </div>
+  {% endif %}
 </div>
 
 {% include project.html %}
+{% include tools.html %}
 {% include footer.html %}

@@ -1,7 +1,5 @@
-$items: 4;
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
-
 
 .item-container-project {
   background-color: $background-color;
@@ -14,11 +12,14 @@ $transition-delay: 0.05s;
   }
 
   .item-project {
-    background-size: cover;
-    background-image: url('../assets/example.png');
     height: 215px;
     @media screen and (max-width: $on-phone) {
       height: 115px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
     }
   }
 
@@ -56,41 +57,50 @@ $transition-delay: 0.05s;
       }
     }
 
-    #toggle {
-      position: absolute;
-      visibility: hidden;
-    }
-
-    // Styles for the 'open' state, if the checkbox is checked
-    #toggle:checked {
-    // Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows
-      // Making the "X" icon using `:before` and `:after` pseudo-elements
-      & ~ .toggle-container .button-toggle {
-        box-shadow: 0 0 0 450px $purple-color-transparent, inset 0 0 0 20px $purple-color-transparent;
-        &:before {
-          transform: translateY(50%) rotate(45deg) scale(1);
-        }
-        &:after {
-          transform: translateY(-50%) rotate(-45deg) scale(1);
-        }
+    @for $i from 1 through $projects {
+      #toggle-#{$i} {
+        position: absolute;
+        visibility: hidden;
       }
 
-      // Open nav
-      & ~ .nav {
-        transform: translate(130px, -130px);
-        // Restoring nav items from "lines" in the menu icon
-        .nav-item {
-          color: $brand-color;
-          letter-spacing: 0;
-          height: 40px;
-          line-height: 40px;
-          margin-top: 0;
-          opacity: 1;
-          transform: scaleY(1);
-          transition: $transition-duration, opacity 0.1s;
-          // Hiding the lines
+      // Styles for the 'open' state, if the checkbox is checked
+      #toggle-#{$i}:checked {
+      // Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows
+        // Making the "X" icon using `:before` and `:after` pseudo-elements
+        & ~ .toggle-container .button-toggle {
+          box-shadow: 0 0 0 450px $purple-color-transparent, inset 0 0 0 20px $purple-color-transparent;
           &:before {
-            opacity: 0;
+            transform: translateY(50%) rotate(45deg) scale(1);
+          }
+          &:after {
+            transform: translateY(-50%) rotate(-45deg) scale(1);
+          }
+        }
+
+        // Open nav
+        & ~ .nav {
+          background: transparent;
+          pointer-events: all;
+          transform: translate(130px, -130px);
+          // Restoring nav items from "lines" in the menu icon
+          .nav-item {
+            font-size: 20px;
+            color: $brand-color;
+            letter-spacing: 0;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 0;
+            opacity: 1;
+            transform: scaleY(1);
+            transition: $transition-duration, opacity 0.1s;
+
+            &:hover {
+              color: $grey-color-light;
+            }
+            // Hiding the lines
+            &:before {
+              opacity: 0;
+            }
           }
         }
       }

@@ -1,0 +1,13 @@
+{% if site.theme_jekyll-theme-experiment.tools %}
+  <div class="l-wrap">
+    <div class="l-center-column">
+      <hr class="hr-decorator">
+      <h1>Tools and experience</h1>
+    </div>
+    <div class="content-tools">
+      {% for tool in site.theme_jekyll-theme-experiment.tools %}
+      <img src="{{ "{{tool.relative_url}}" | relative_url }}" alt="">
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

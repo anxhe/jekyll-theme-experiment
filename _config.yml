@@ -4,10 +4,7 @@ author: GitHub User
 name: Your Username
 description: Programmer From Somewhere On Earth
 
-avatar : https://robohash.org/experiment.png?size=300x300
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is a site where I talk a litle about me and mys proyects.
 
 # social links
 twitter_username: anxhe_
@@ -33,15 +30,53 @@ minima:
 # this and add the path to the pages in order as they should show up
 # baseurl: http://127.0.0.1:4000
 header_pages:
-  - about.md
-  - project.md
+  - index.md
   - blog.md
-  - page.md
-  - post.md
+
+# Config section the home
+
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-experiment
+theme_jekyll-theme-experiment:
+  about:
+    title: My name
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet urna
+      eu dolor placerat varius. Vivamus eros augue, consequat id scelerisque nec,
+      fringilla in est. Proin pellentesque malesuada mauris, quis aliquam augue
+      vestibulum ac. Vestibulum ut feugiat nibh. Sed faucibus felis purus, sed
+      convallis leo dictum vehicula.
+      <br><br>
+      Nam maximus tempor feugiat. Mauris tristique imperdiet nulla id egestas.
+      Proin eget lobortis magna. Duis consectetur nibh at elit viverra congue.
+      Ut eu turpis enim.
+    avatar : https://robohash.org/experiment-avatar.png?size=300x300
+
+  portfolio:
+    title: Portfolio
+    projects:
+      - name: Jeckyll Theme experiment
+        link: http://try.livingstyleguide.org
+        github: https://github.com/fanxhe/lsg-editor
+        img_relative_url: /assets/example.png
+
+      - name: Jeckyll Theme experiment
+        github: https://github.com/anxhe/jekyll-theme-experiment
+        img_relative_url: /assets/example.png
+
+      - name: Jekyll Theme experiment
+        github: https://github.com/anxhe/jekyll-theme-experiment
+        img_relative_url: /assets/example.png
+
+  tools:
+    - relative_url: /assets/icons/bitbucket/bitbucket-original.svg
+    - relative_url: /assets/icons/heroku/heroku-original.svg
+    - relative_url: /assets/icons/git/git-original.svg
+    - relative_url: /assets/icons/express/express-original.svg
+    - relative_url: /assets/icons/angularjs/angularjs-original.svg
+
 exclude:
   - Gemfile
   - Gemfile.lock
