@@ -3,10 +3,10 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-experiment"
   spec.version       = "0.1.0"
-  spec.authors       = ["Anyelina Moreno Robledo"]
+  spec.authors       = ["Angelina Moreno Robledo"]
   spec.email         = ["anyelinamoreno@gmail.com"]
 
-  spec.summary       = %q{x}
+  spec.summary       = %q{This is a jekyll theme made with love}
   spec.homepage      = "https://github.com/jekyll-theme-experiment"
   spec.license       = "MIT"
 
