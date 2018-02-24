@@ -1,5 +1,6 @@
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
+$items: 2;
 
 .item-container-project {
   background-color: $background-color;
@@ -195,13 +196,6 @@ $transition-delay: 0.05s;
         // Adjusting width for the second line
         &:nth-child(2) {
           letter-spacing: -7px;
-        }
-
-        // Adjusting from the fourth element onwards
-        &:nth-child(n + 4) {
-          letter-spacing: -8px;
-          margin-top: -7px;
-          opacity: 0;
         }
 
         // Getting the lines for the hamburger menu icon
