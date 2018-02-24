@@ -60,12 +60,8 @@ theme_jekyll-theme-experiment:
   portfolio:
     title: Portfolio
     projects:
-      - name: Jeckyll Theme experiment
-        link: http://try.livingstyleguide.org
-        github: https://github.com/fanxhe/lsg-editor
-        img_relative_url: /assets/example.png
 
-      - name: Jeckyll Theme experiment
+      - name: Jekyll Theme experiment
         github: https://github.com/anxhe/jekyll-theme-experiment
         img_relative_url: /assets/example.png
 
