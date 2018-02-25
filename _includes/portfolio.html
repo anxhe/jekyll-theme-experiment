@@ -8,7 +8,7 @@
         {% for project in site.theme_jekyll-theme-experiment.portfolio.projects %}
           <div class="item-container-project">
             <div class="item-project">
-              <img src="{{ "{{project.img_relative_url}}" | relative_url }}" alt="{{ project.name }}">
+              <img src="{{ project.img_relative_url | relative_url }}" alt="{{ project.name }}">
             </div>
             <div class="content-hamburger-menu">
               <input id="toggle-{{ forloop.index }}" type="checkbox">

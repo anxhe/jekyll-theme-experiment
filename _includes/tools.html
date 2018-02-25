@@ -6,7 +6,7 @@
     </div>
     <div class="content-tools">
       {% for tool in site.theme_jekyll-theme-experiment.tools %}
-      <img src="{{ "{{tool.relative_url}}" | relative_url }}" alt="">
+      <img src="{{ tool.relative_url | relative_url }}" alt="">
       {% endfor %}
     </div>
   </div>
