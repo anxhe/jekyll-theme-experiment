@@ -4,7 +4,9 @@ Since I started using [Jekyll](https://jekyllrb.com/) I have wanted to make a th
 
 ![](https://cl.ly/2F3f432B0z09/Screen%20Recording%202018-02-24%20at%2011.23%20p.m..gif)
 
-Made with :love: by @anxhe
+Made with ♥️ by @anxhe
+
+Your can see a demo [here](https://anxhe.github.io/jekyll-theme-experiment/)
 
 ## Installation
 
