@@ -41,7 +41,7 @@ header_pages:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-experiment
+
 theme_jekyll-theme-experiment:
   about:
     # title: My name
