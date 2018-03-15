@@ -73,10 +73,6 @@ theme_jekyll-theme-experiment:
 
   portfolio: # optional
     title: Portfolio
-    # Depending of the number of projects, you will need to update $projects
-    # variable in a sass file. e.g.
-    # _sass/main.scss
-    #
     projects:
       - name: Jekyll Theme experiment
         link: http://example.com
