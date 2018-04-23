@@ -3,6 +3,6 @@
 ---
 
 // Number of projects inside of portfolio
-$projects: {{ site.theme_jekyll-theme-experiment.portfolio.projects | size | default: 0 }};
+$projects: {{ site.jekyll-theme-experiment.portfolio.projects | size | default: 0 }};
 
 @import "experiment";

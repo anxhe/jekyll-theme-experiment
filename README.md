@@ -67,12 +67,16 @@ jekyll-theme-experiment allows you to customize the following sections in the ma
 Add the following sample data to try it:
 
 ```yml
-theme_jekyll-theme-experiment:
-  about:
+jekyll-theme-experiment:
+  about: # optional
     avatar: https://robohash.org/experiment-avatar.png?size=300x300
 
   portfolio: # optional
     title: Portfolio
+    # Depending of the number of projects, you will need to update $projects
+    # variable in a sass file. e.g.
+    # _sass/main.scss
+    #
     projects:
       - name: Jekyll Theme experiment
         link: http://example.com
@@ -80,7 +84,9 @@ theme_jekyll-theme-experiment:
         img_relative_url: /assets/example.png
 
   tools: # optional
-    - relative_url: /assets/icons/bitbucket/bitbucket-original.svg
+    title: Tools and Experience 
+    icons:
+      - relative_url: /assets/icons/bitbucket/bitbucket-original.svg
 ```
 
 By default, jekyll generates a couple markdown files, we'll need to make

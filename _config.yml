@@ -42,7 +42,7 @@ header_pages:
 # Build settings
 markdown: kramdown
 
-theme_jekyll-theme-experiment:
+jekyll-theme-experiment:
   about:
     avatar : https://robohash.org/experiment-avatar.png?size=300x300
 
@@ -59,11 +59,13 @@ theme_jekyll-theme-experiment:
         img_relative_url: /assets/example.png
 
   tools:
-    - relative_url: /assets/icons/bitbucket/bitbucket-original.svg
-    - relative_url: /assets/icons/heroku/heroku-original.svg
-    - relative_url: /assets/icons/git/git-original.svg
-    - relative_url: /assets/icons/express/express-original.svg
-    - relative_url: /assets/icons/angularjs/angularjs-original.svg
+    title: Tools and Experience
+    icons:
+      - relative_url: /assets/icons/bitbucket/bitbucket-original.svg
+      - relative_url: /assets/icons/heroku/heroku-original.svg
+      - relative_url: /assets/icons/git/git-original.svg
+      - relative_url: /assets/icons/express/express-original.svg
+      - relative_url: /assets/icons/angularjs/angularjs-original.svg
 
 exclude:
   - Gemfile

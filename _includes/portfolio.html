@@ -1,11 +1,11 @@
-{% if site.theme_jekyll-theme-experiment.portfolio %}
+{% if site.jekyll-theme-experiment.portfolio %}
   <div class="l-wrap">
     <div class="l-center-column">
       <hr class="hr-decorator">
-      <h1>{{ site.theme_jekyll-theme-experiment.portfolio.title }}</h1>
+      <h1>{{ site.jekyll-theme-experiment.portfolio.title }}</h1>
     </div>
       <div class="l-item">
-        {% for project in site.theme_jekyll-theme-experiment.portfolio.projects %}
+        {% for project in site.jekyll-theme-experiment.portfolio.projects %}
           <div class="item-container-project">
             <div class="item-project">
               <img src="{{ project.img_relative_url | relative_url }}" alt="{{ project.name }}">
