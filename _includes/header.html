@@ -1,7 +1,7 @@
 <nav class="navbar">
   {% assign default_paths = site.html_pages | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
-
+  <span class="burguer-button" id='burguer-button'><i class="fas fa-bars"></i></span>
   <div class="navbar-item">
     {% for path in page_paths %}
       {% assign my_page = site.html_pages | where: "path", path | first %}

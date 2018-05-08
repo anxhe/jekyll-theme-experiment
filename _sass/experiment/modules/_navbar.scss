@@ -1,22 +1,61 @@
 .navbar {
+  background-color: $purple-color;
   box-shadow: 0 0 0.2em $grey-color;
+  height: 70px;
+  line-height: 70px;
   position: fixed;
   text-align: right;
-  background-color: $purple-color;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   .navbar-item {
-    padding: $spacing-unit / 2;
     text-transform: uppercase;
     & > a {
       font-weight: bold;
-      padding: 0 $spacing-unit / 2;
+      padding: $spacing-unit / 2;
     }
     & > a:hover {
       color: $grey-color-light;
     }
     & .active {
       color: $grey-color-light;
+    }
+  }
+  .burguer-button {
+    display: none;
+  }
+  @media screen and (max-width: $on-phone) {
+    .burguer-button {
+      margin: $spacing-unit / 2;
+      display: block;
+      color:  $brand-color;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 0.3em $grey-color;
+      text-align: center;
+    }
+
+    .navbar-item {
+      background-color: $purple-color-transparent;
+      left: -100%;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      align-items:  center;
+      transition: .3s;
+      & > a {
+        padding: $spacing-unit / 2 $spacing-unit * 3;
+        border-bottom: solid 1px $brand-color;
+      }
+      & > a:first-child {
+        border-top: solid 1px $brand-color;
+        margin-top: $spacing-unit;
+      }
+    }
+    .active {
+      left: 0;
     }
   }
 }
