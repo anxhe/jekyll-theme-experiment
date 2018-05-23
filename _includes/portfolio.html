@@ -11,16 +11,25 @@
               <img src="{{ project.img_relative_url | relative_url }}" alt="{{ project.name }}">
             </div>
             <div class="content-hamburger-menu">
-              <input id="toggle-{{ forloop.index }}" type="checkbox">
-              <label class="toggle-container" for="toggle-{{ forloop.index }}">
-                <span class="button button-toggle"></span>
-                <div class="information-project">
-                 <h3>{{ project.name }}</h3>
-                </div>
-              </label>
-              <nav class="nav">
-                <a class="nav-item" href="{{ project.link }}" target="_blank"><i class="fas fa-link"></i></a>
-                <a class="nav-item" href="{{ project.github }}" target="_blank"><i class="fab fa-github-alt"></i></a>
+              <div class="information-project">
+                <ul>
+                  <li>
+                    <a class="icon" id="toggle-{{ forloop.index }}">
+                      <i class="fas fa-bars"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <h3>{{ project.name }}</h3>
+                  </li>
+                </ul>
+              </div>
+              <nav class="nav-links nav-{{ forloop.index }}">
+                <a class="nav-item" href="{{ project.link }}" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a class="nav-item" href="{{ project.github }}" target="_blank">
+                  <i class="fab fa-github-alt"></i>
+                </a>
               </nav>
             </div>
           </div>

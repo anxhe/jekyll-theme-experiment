@@ -41,6 +41,7 @@ ul, ol, dl, figure,
  */
 ul, ol {
   margin-left: $spacing-unit;
+  list-style: none;
 }
 
 li {
@@ -70,7 +71,7 @@ h2 {
 a {
   color: $brand-color;
   text-decoration: none;
-
+  cursor: pointer;
   &:hover {
     color: $grey-color-dark;
   }

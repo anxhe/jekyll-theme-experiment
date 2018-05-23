@@ -1,0 +1,101 @@
+.item-container-project {
+  background-color: $background-color;
+  margin: $spacing-unit;
+  width: 400px;
+  height: 285px;
+
+  @media screen and (max-width: $on-phone) {
+    width: 300px;
+    height: 180px;
+  }
+
+  .item-project {
+    height: 215px;
+    @media screen and (max-width: $on-phone) {
+      height: 115px;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .content-hamburger-menu {
+    width: 400px;
+    height: 285px;
+    box-shadow: 0 0 1em $grey-color;
+    position: relative;
+    top: -215px;
+    transition: .3s;
+    overflow: hidden;
+
+    @media screen and (max-width: $on-phone) {
+      height: 180px;
+      top: -115px;
+      width: 300px;
+    }
+
+    .information-project {
+      background-color: $purple-color;
+      bottom: 0px;
+      color: $brand-color;
+      height: 70px;
+      line-height: 70px;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      @media screen and (max-width: $on-phone) {
+        height: 30px;
+        line-height: 30px;
+        font-size: $spacing-unit / 2;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+          margin-right: $spacing-unit;
+        }
+        .icon:hover {
+          color: $grey-color-light;
+        }
+      }
+    }
+    .nav-links {
+      align-items: center;
+      bottom: -285px;
+      display: flex;
+      justify-content: center;
+      height: 215px;
+      // display: inline-block;
+      position: relative;
+      // pointer-events: none;
+      // z-index: 1;
+      background-color: $purple-color-transparent;
+      transition: .3s;
+      @media screen and (max-width: $on-phone) {
+        height: 160px;
+      }
+      .nav-item {
+        position: relative;
+        display: inline-block;
+        // float: left;
+        // clear: both;
+        // color: transparent;
+        font-size: 14px;
+        padding: 30px;
+        letter-spacing: -6.2px;
+        height: 7px;
+        line-height: 7px;
+        text-transform: uppercase;
+        &:hover {
+          color: $grey-color-light;
+        }
+      }
+    }
+    @for $i from 1 through $projects {
+      .active_nav-#{$i} {
+        bottom: 0;
+      }
+    }
+  }
+}
