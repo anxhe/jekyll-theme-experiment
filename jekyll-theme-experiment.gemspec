@@ -1,8 +1,10 @@
 # coding: utf-8
 
+require_relative 'lib/jekyll-theme-experiment/version'
+
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-experiment"
-  spec.version       = "1.0.1"
+  spec.version       = ::JekyllThemeExperiment::VERSION
   spec.authors       = ["Angelina Moreno Robledo"]
   spec.email         = ["anyelinamoreno@gmail.com"]
 
